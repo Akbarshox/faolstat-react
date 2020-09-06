@@ -1,0 +1,98 @@
+.card {
+    position: relative;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.bg1 {
+    background: linear-gradient(-45deg, #f321d7, #48C5F0);
+}
+
+.bg2 {
+    background: linear-gradient(-45deg, #48C5F0, #f321d7);
+}
+
+.bg3 {
+    background: linear-gradient(-45deg, #f321d7, #48C5F0);
+}
+
+.bg4 {
+    background: linear-gradient(-45deg, #48C5F0, #f321d7);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 1;
+    -webkit-transform: skewY(-5deg) scale(1.5);
+    transform: skewY(-5deg) scale(1.5);
+}
+
+.card ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.card ul li:nth-child(2){
+    font-size: 25px;
+    font-family: service, sans-serif;
+    font-weight: bold;
+}
+
+.icon {
+    width: 80px !important;
+    height: 80px;
+    color: #fff;
+    font-size: 70px;
+    padding: 15px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 100px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.cardButton {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+    outline: none;
+    cursor: pointer;
+    font-family: faolstat, Serif;
+}
+
+.cardButton:hover {
+    color: rebeccapurple;
+}
+
+@media (max-width: 600px) {
+    .card:hover {
+        -webkit-transform: scale(1.04);
+        transform: scale(1.04);
+    }
+}

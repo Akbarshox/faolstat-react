@@ -1,0 +1,127 @@
+@font-face {
+    font-family: faolstat;
+    src: url('../fonts/BalsamiqSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: service;
+    src: url('../fonts/Montserrat-ThinItalic.ttf');
+}
+
+.header {
+    background: #48C5F0;
+}
+
+.appbar {
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+    font-size: 23px;
+    font-family: cursive;
+    color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    background-color: #48C5F0;
+    width: 100%;
+    height: 85px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.appbar li {
+    display: inline-flex;
+    padding: 8px 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 100000;
+}
+
+.appbar li:hover {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #ffc600;
+}
+
+.faolstat {
+    font-family: faolstat;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.service {
+    width: 40%;
+    margin: 150px auto -20px;
+    text-align: center;
+    font-family: service, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.service button {
+    padding: 11px 40px;
+    border: none;
+    background: #ffc600;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.plus {
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+    transform: rotate(45deg);
+    margin-left: 2px;
+}
+
+.barText {
+    font-size: 16px;
+    font-family: faolstat;
+    color: #000;
+}
+
+.imgtop {
+    position: absolute;
+    width: 50%;
+    margin-left: 25%;
+    height: auto;
+    z-index: 10;
+}
+
+.imgbottom {
+    width: 100%;
+    height: auto;
+    margin-bottom: -10px;
+}
+
+@media (max-width: 1205px) {
+    .appbar li {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .imgtop {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        z-index: 1000;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    .appbar li {
+        display: none;
+    }
+
+    .service {
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,10 @@
+.container {
+    text-align: center;
+}
+.p {
+    font-family: faolstat;
+    margin: 0 auto;
+    font-size: 50px;
+    display: inline;
+}
+
