@@ -1,5 +1,4 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Wrapper from "../Wrapper";
 import style from './Card.module.css';
@@ -7,20 +6,12 @@ import {CardData} from "./CardJsonData";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
-const useStyles = makeStyles((theme) => ({
-   root: {
-      flexGrow: 1,
-      marginTop: theme.spacing(5),
-      marginBottom: 150
-   },
-}));
-
 export default function FullWidthGrid() {
-   const classes = useStyles();
 
    return (
-      <div className={classes.root}>
+      <div className={style.root}>
          <Wrapper>
+            <div className={style.hot}>Горячие предложения</div>
             <Grid container spacing={3} alignItems="center" justify="center">
                {CardData.map((e, i) =>
                   <Grid item xs={12} sm={3} key={i}>

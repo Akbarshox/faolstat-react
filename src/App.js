@@ -5,10 +5,16 @@ import WhatIs from "./Dashboard/WhatIs";
 
 function App() {
    return (
-      <div className="App">
-         <Header />
-         <WhatIs />
-         <Cards />
+      <div>
+         <div id='main'>
+            <Header/>
+         </div>
+         <div id='about'>
+            <WhatIs/>
+         </div>
+         <div id='tarif'>
+            <Cards/>
+         </div>
       </div>
    );
 }

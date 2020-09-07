@@ -1,22 +1,18 @@
 export const DashboardData = [
    {
-      name: "Асосий",
-      link: ""
+      name: "Главная",
+      link: "#main"
    },
    {
-      name: "Маълумотнома",
-      link: ""
+      name: "О нас",
+      link: "#about"
    },
    {
-      name: "Биз ҳакимизда",
-      link: ""
+      name: "Тарифы",
+      link: "#tarif"
    },
    {
-      name: "Тарифлар",
-      link: ""
-   },
-   {
-      name: "Контактларимиз",
-      link: ""
+      name: "Контакты"  ,
+      link: "#contact"
    }
 ]

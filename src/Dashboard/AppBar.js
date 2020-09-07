@@ -3,6 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import ScrollIntoView from 'react-scroll-into-view'
 import {DashboardData} from './JsonData';
 import plus from '../assests/plus.svg';
 import style from './dashboard.module.css';
@@ -32,7 +33,11 @@ export default function ButtonAppBar() {
                   </Typography>
                   <ul className={style.appbar}>
                      {DashboardData.map((el, i) =>
-                        <li key={i}><img src={plus} alt="plus" className={style.plus}/>{el.name}</li>
+                        <li key={i}>
+                           <ScrollIntoView selector={el.link} smooth={true}>
+                              <img src={plus} alt="plus" className={style.plus}/>{el.name}
+                           </ScrollIntoView>
+                        </li>
                      )}
                   </ul>
                   {matches === true ? <SideBar/> : null}

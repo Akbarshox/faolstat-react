@@ -9,6 +9,7 @@ import ListItem from '@material-ui/core/ListItem';
 import {DashboardData} from "./JsonData";
 import icon from '../assests/bars.svg';
 import style from './dashboard.module.css';
+import ScrollIntoView from "react-scroll-into-view";
 
 const useStyles = makeStyles({
    list: {
@@ -41,8 +42,12 @@ export default function SideBar() {
          <Divider/>
          <List>
             {DashboardData.map((e, i) =>
-               <ListItem key={i}><p className={style.barText}>{e.name}</p></ListItem>
-               )}
+               <ListItem key={i}>
+                  <ScrollIntoView selector={e.link}>
+                     <p className={style.barText}>{e.name}</p>
+                  </ScrollIntoView>
+               </ListItem>
+            )}
          </List>
       </div>
    );
@@ -51,7 +56,8 @@ export default function SideBar() {
       <div>
          <React.Fragment>
             <Button onClick={toggleDrawer('right', true)}
-                    style={{position: 'absolute', right: 0, zIndex: 1000, top: 10}}><img src={icon} alt="icon"/></Button>
+                    style={{position: 'absolute', right: 0, zIndex: 1000, top: 10}}><img src={icon}
+                                                                                         alt="icon"/></Button>
             <Drawer anchor='right' open={state['right']} onClose={toggleDrawer('right', false)}>
                {list('left')}
             </Drawer>
