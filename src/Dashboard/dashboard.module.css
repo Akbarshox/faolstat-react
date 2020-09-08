@@ -32,8 +32,7 @@
 
 .appbar li {
     display: inline-flex;
-    padding: 8px 16px;
-    margin: 0 auto;
+    padding: 10px 20px;
     cursor: pointer;
     position: relative;
     z-index: 100000;

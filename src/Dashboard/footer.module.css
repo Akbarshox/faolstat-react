@@ -1,0 +1,41 @@
+.root {
+    background: linear-gradient(#fff, #CEF38A);
+    height: 100%;
+}
+
+.footer {
+    background: linear-gradient(#DAF7A6, #5BFEE3);
+    height: 100%;
+    color: #000;
+}
+
+.writeus {
+    color: black;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.writeus:hover {
+    color: red;
+}
+
+.bckg {
+    font-family: faolstat, sans;
+    margin: 5% auto;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(180deg, #FAFFF1 50%, #5BFEE3 50%);
+}
+
+.main {
+    font-family: faolstat;
+}
+.map{
+    margin: 15px 0px
+}
+@media (max-width: 600px) {
+    .bckg {
+        font-size: 30px;
+    }
+}

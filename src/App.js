@@ -2,6 +2,7 @@ import React from 'react';
 import Header from "./Dashboard/Header";
 import Cards from './Dashboard/Cards';
 import WhatIs from "./Dashboard/WhatIs";
+import Contacts from "./Dashboard/Contacts";
 
 function App() {
    return (
@@ -14,6 +15,9 @@ function App() {
          </div>
          <div id='tarif'>
             <Cards/>
+         </div>
+         <div id='contact'>
+            <Contacts/>
          </div>
       </div>
    );
