@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
    menuButton: {
       marginRight: theme.spacing(2),
    },
+   appbarStyle: {
+      background: 'linear-gradient(#48C5F0, transparent)',
+   }
 }));
 
 export default function ButtonAppBar() {
@@ -26,7 +29,7 @@ export default function ButtonAppBar() {
    return (
       <div className={classes.root}>
          <Elevation>
-            <AppBar position="fixed" style={{backgroundColor: '#48C5F0'}}>
+            <AppBar position="fixed" className={classes.appbarStyle}>
                <Toolbar>
                   <Typography variant="h5" className={classes.title}>
                      <p className={style.faolstat}>FaolStat .</p>

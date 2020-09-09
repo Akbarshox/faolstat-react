@@ -1,11 +1,15 @@
 import React from 'react';
+import {YMaps, Map, Placemark} from 'react-yandex-maps';
+import style from './footer.module.css';
 import Typography from '@material-ui/core/Typography';
 import {makeStyles} from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import style from './footer.module.css';
 import Grid from "@material-ui/core/Grid";
-import {YMaps, Map, Placemark} from 'react-yandex-maps';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
+import {faInstagram} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 
 const useStyles = makeStyles((theme) => ({
    root: {
@@ -71,9 +75,13 @@ export default function Contacts() {
 
          <footer className={[classes.footer, style.footer].join(" ")}>
             <Container maxWidth="sm">
-               <Typography variant="body1">My sticky footer can be found here.</Typography>
+               <ul className={style.footerIcons}>
+                  <li><a href="https://t.me/faolstat"><FontAwesomeIcon icon={faPaperPlane}/></a></li>
+                  <li><a href="https://t.me/faolstat"><FontAwesomeIcon icon={faFacebook}/></a></li>
+                  <li><a href="https://t.me/faolstat"><FontAwesomeIcon icon={faInstagram}/></a></li>
+               </ul>
                <Typography variant="body2" color="textSecondary">
-                  {'Copyright © '}
+                  {'Faolstat. © '}
                   <Link color="inherit" href="https://t.me/faolstat">
                      <p className={style.writeus}>Свяжитесь с нами сейчас</p>
                   </Link>{' '}
